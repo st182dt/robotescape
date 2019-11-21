@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport"
+          content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.01, user-scalable=no">
+
+    <script>
+		window.addEventListener("load", function ()
+		{
+			function onTouchPreventDefault(event)
+			{
+				event.preventDefault();
+			}
+
+			document.addEventListener("touchmove", onTouchPreventDefault, false);
+			document.addEventListener("touchstart", onTouchPreventDefault, false);
+		}, false);
+    </script>
+
+    <title>STAR DRIVES</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/game.css">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="icon" type="image/png" href="assets/favicon/512x512.png" sizes="512x512">
+
+
+    <!--PPS_USE-INLOGICleaderboard-->
+    <!--
+    <script src="leaderboard/ldrbrd.js"></script>
+    PPS_USE-INLOGICleaderboard
+    -->
+
+</head>
+<body>
+
+<!--PPS_USE-GAMELOFT-->
+<!--
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K74X66" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>dataLayer = [];
+dataLayer.push({
+    'event': 'pageLoad',
+    'productKey': 'mahjongFlowers'
+});
+</script>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K74X66');</script>
+PPS_USE-GAMELOFT
+-->
+
+<div id="wrongRotation">
+    <img src="assets/img_480/rotate_screen.png" alt=""/>
+</div>
+
+<div id="adFullScreen">
+    <img id="adFullScreenClose" src="assets/img_480/krizik.png" alt=""/>
+</div>
+
+<div id="adBanner">
+</div>
+<div class="font_preload" style="opacity: 0">
+    <span style="font-family: 'baloo', normal;"></span>
+</div>
+<div id="game">
+    <!--PPS_DELETE-BUILD-->
+    <script src="js/phaser.min.js"></script>
+    <script src="js/screenfull.min.js"></script>
+    <!-- script src="js/phaser-debug.js"></script-->
+    <script src="js/Data/AssetsLoader.js"></script>
+    <script src="js/Data/GameData.js"></script>
+    <script src="js/Data/Languages.js"></script>
+    <script src="js/Data/Resolutions.js"></script>
+    <script src="js/Objects/OrbitingObject.js"></script>
+    <script src="js/Objects/Track.js"></script>
+    <script src="js/Objects/OrbitingObjectSpawner.js"></script>
+    <script src="js/Objects/ObjectiveManager.js"></script>
+    <script src="js/Helpers/SoundManager.js"></script>
+    <script src="js/Helpers/VectorHelpers.js"></script>
+    <script src="js/Helpers/NumberPadding.js"></script>
+    <script src="js/Helpers/Analytics.js"></script>
+    <script src="js/Helpers/Defines.js"></script>
+    <script src="js/Helpers/Buttons.js"></script>
+    <script src="js/Helpers/Serialization.js"></script>
+    <script src="js/Helpers/HTMLcontrol.js"></script>
+    <script src="js/States/GameState.js"></script>
+    <script src="js/States/SplashState.js"></script>
+    <script src="js/States/PreloadState.js"></script>
+    <script src="js/Scenes/ScenesTransitions.js"></script>
+    <script src="js/Scenes/SceneBackground.js"></script>
+    <script src="js/Scenes/SceneMenu.js"></script>
+    <script src="js/Scenes/SceneBalance.js"></script>
+    <script src="js/Scenes/SceneHangar.js"></script>
+    <script src="js/Scenes/SceneGame.js"></script>
+    <script src="js/Scenes/SceneRevive.js"></script>
+    <script src="js/Scenes/SceneSettings.js"></script>
+    <script src="js/Scenes/SceneHra.js"></script>
+    <script src="js/Scenes/ScenePopup.js"></script>
+    <script src="js/Scenes/SceneLanguages.js"></script>
+    <script src="js/Scenes/SceneTutorial.js"></script>
+    <script src="js/Scenes/SceneResult.js"></script>
+    <script src="js/Scenes/SceneInstructions.js"></script>
+    <script src="js/Scenes/ScenePause.js"></script>
+    <script src="js/Scenes/SceneExitPrompt.js"></script>
+    <script src="js/Scenes/SceneDailyReward.js"></script>
+    <script src="js/Scenes/SceneFlash.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--script src="js/Helpers/ScreenConsole.js"></script-->
+    <!--PPS_DELETE-BUILD-->
+
+    <!--PPS_USE-BUILD-->
+    <!--
+    <-<srcFls>->
+    PPS_USE-BUILD
+    -->
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,449 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<stringresources>
+  <languages>
+    <language>en</language>
+    <language>de</language>
+    <language>es</language>
+    <language>fr</language>
+    <language>it</language>
+    <language>br</language>
+    <language>ru</language>
+  </languages>
+  <strings>
+    <string id="PLAY">
+      <en>PLAY</en>
+      <de>SPIELEN</de>
+      <es>JUGAR</es>
+      <fr>JOUER</fr>
+      <it>GIOCA</it>
+      <br>JOGAR</br>
+      <ru>ИГРАТЬ</ru>
+    </string>
+    <string id="HANGAR">
+      <en>HANGAR</en>
+      <de>HANGAR</de>
+      <es>HANGAR</es>
+      <fr>HANGAR</fr>
+      <it>HANGAR</it>
+      <br>HANGAR</br>
+      <ru>АНГАР</ru>
+    </string>
+    <string id="ENDLESS">
+      <en>ENDLESS</en>
+      <de>ENDLOS</de>
+      <es>INTERMINABLE</es>
+      <fr>INFINI</fr>
+      <it>INFINITA</it>
+      <br>INFINITO</br>
+      <ru>БЕСКОНЕЧНАЯ\nДОРОГА</ru>
+    </string>
+    <string id="SPEED">
+      <en>SPEED</en>
+      <de>TEMPO</de>
+      <es>VELOCIDAD</es>
+      <fr>VITESSE</fr>
+      <it>VELOCITÀ</it>
+      <br>VELOCIDADE</br>
+      <ru>СКОРОСТЬ</ru>
+    </string>
+    <string id="BRAKE">
+      <en>BRAKE</en>
+      <de>BREMSEN</de>
+      <es>FRENAR</es>
+      <fr>FREIN</fr>
+      <it>FRENO</it>
+      <br>FREIO</br>
+      <ru>ТОРМОЗ</ru>
+    </string>
+    <string id="LIVES">
+      <en>LIVES</en>
+      <de>LEBEN</de>
+      <es>VIDAS</es>
+      <fr>VIES</fr>
+      <it>VITE</it>
+      <br>VIDAS</br>
+      <ru>ЖИЗНИ</ru>
+    </string>
+    <string id="BUY">
+      <en>BUY</en>
+      <de>KAUFEN</de>
+      <es>COMPRAR</es>
+      <fr>ACHETER</fr>
+      <it>COMPRA</it>
+      <br>COMPRAR</br>
+      <ru>КУПИТЬ</ru>
+    </string>
+    <string id="NO_MONEY">
+      <en>NOT ENOUGH COINS!</en>
+      <de>NICHT GENUG MÜNZEN!</de>
+      <es>MONEDAS INSUFICIENTES</es>
+      <fr>PAS ASSEZ DE PIÈCES !</fr>
+      <it>NON ABBASTANZA MONETE!</it>
+      <br>MOEDAS INSUFICIENTES!</br>
+      <ru>НЕ ИМЕЕТЕ ДОСТАТОЧНО МОНЕТ.</ru>
+    </string>
+    <string id="SELECT">
+      <en>SELECT</en>
+      <de>AUSWÄHLEN</de>
+      <es>SELECCIONAR</es>
+      <fr>SÉLECTIONNER</fr>
+      <it>SELEZIONA</it>
+      <br>SELECIONE</br>
+      <ru>ВЫБРАТЬ</ru>
+    </string>
+    <string id="MUSIC">
+      <en>MUSIC</en>
+      <de>MUSIK</de>
+      <es>MÚSICA</es>
+      <fr>MUSIQUE</fr>
+      <it>MUSICA</it>
+      <br>MÚSICA</br>
+      <ru>МУЗЫКА</ru>
+    </string>
+    <string id="SOUNDS">
+      <en>SOUNDS</en>
+      <de>TÖNE</de>
+      <es>SONIDOS</es>
+      <fr>SONS</fr>
+      <it>SONORO</it>
+      <br>SONS</br>
+      <ru>ЗВУКИ</ru>
+    </string>
+    <string id="OBJECTIVE">
+      <en>OBJECTIVE</en>
+      <de>ZIEL</de>
+      <es>OBJETIVO</es>
+      <fr>OBJECTIF</fr>
+      <it>OBIETTIVO</it>
+      <br>OBJETIVO</br>
+      <ru>ЗАДАЧА</ru>
+    </string>
+    <string id="LOOPS">
+      <en>LOOPS</en>
+      <de>SCHLEIFEN</de>
+      <es>VUELTAS</es>
+      <fr>LOOPINGS</fr>
+      <it>GIRI</it>
+      <br>VOLTAS</br>
+      <ru>ПЕТЛЯ</ru>
+    </string>
+    <string id="ELIMINATE">
+      <en>ELIMINATE</en>
+      <de>ELIMINIEREN</de>
+      <es>ELIMINAR</es>
+      <fr>ÉLIMINER</fr>
+      <it>ELIMINA</it>
+      <br>ELIMINAR</br>
+      <ru>УСТРАНИТЬ</ru>
+    </string>
+    <string id="SECOND">
+      <en>SECOND</en>
+      <de>SEKUNDE</de>
+      <es>SEGUNDO</es>
+      <fr>SECONDE</fr>
+      <it>SECONDO</it>
+      <br>SEGUNDO</br>
+      <ru>ВТОРОЙ</ru>
+    </string>
+    <string id="SECONDS">
+      <en>SECONDS</en>
+      <de>SEKUNDEN</de>
+      <es>SEGUNDOS</es>
+      <fr>SECONDES</fr>
+      <it>SECONDI</it>
+      <br>SEGUNDOS</br>
+      <ru>СЕКУНДЫ</ru>
+    </string>
+    <string id="BEST">
+      <en>BEST</en>
+      <de>BESTLEISTUNG</de>
+      <es>RÉCORD</es>
+      <fr>MEILLEUR</fr>
+      <it>RECORD</it>
+      <br>MELHOR</br>
+      <ru>ЛУЧШИЙ</ru>
+    </string>
+    <string id="TUTORIAL_1_1">
+      <en>HOLD TO SPEED UP</en>
+      <de>ZUM BESCHLEUNIGEN HALTEN</de>
+      <es>MANTÉN PARA ACELERAR</es>
+      <fr>MAINTENIR APPUYÉ POUR ACCÉLÉRER</fr>
+      <it>TIENI PREMUTO PER ACCELERARE</it>
+      <br>TOQUE E SEGURE PARA ACELERAR</br>
+      <ru>УДЕРЖИВАЙТЕ, ЧТОБЫ УСКОРИТЬСЯ</ru>
+    </string>
+    <string id="TUTORIAL_1_2">
+      <en>HOLD TO SLOW DOWN</en>
+      <de>ZUM ABBREMSEN HALTEN</de>
+      <es>MANTÉN PARA REDUCIR LA VELOCIDAD</es>
+      <fr>MAINTENIR APPUYÉ POUR RALENTIR</fr>
+      <it>TIENI PREMUTO PER RALLENTARE</it>
+      <br>TOQUE E SEGURE PARA DESACELERAR</br>
+      <ru>УДЕРЖИВАЙТЕ, ЧТОБЫ ЗАМЕДЛИТЬСЯ</ru>
+    </string>
+    <string id="AVOID_ENEMIES">
+      <en>AVOID ENEMIES</en>
+      <de>WEICHE FEINDEN AUS</de>
+      <es>EVITA A LOS ENEMIGOS</es>
+      <fr>ÉVITER LES ENNEMIS</fr>
+      <it>EVITA I NEMICI</it>
+      <br>EVITE INIMIGOS</br>
+      <ru>ИЗБЕГАЙТЕ ВРАГОВ</ru>
+    </string>
+    <string id="OK">
+      <en>OK</en>
+      <de>OK</de>
+      <es>ACEPTAR</es>
+      <fr>OK</fr>
+      <it>OK</it>
+      <br>OK</br>
+      <ru>ХОРОШО</ru>
+    </string>
+    <string id="AVOID">
+      <en>AVOID</en>
+      <de>VERMEIDEN</de>
+      <es>EVITAR</es>
+      <fr>ÉVITER</fr>
+      <it>EVITA</it>
+      <br>EVITAR</br>
+      <ru>ИЗБЕГАЙТЕ</ru>
+    </string>
+    <string id="TUTORIAL_1_3">
+      <en>COMPLETE 5 LOOPS</en>
+      <de>SCHLIESSE 5 SCHLEIFEN AB</de>
+      <es>COMPLETA 5 VUELTAS</es>
+      <fr>RÉALISER 5 LOOPINGS</fr>
+      <it>COMPLETA 5 GIRI</it>
+      <br>CONCLUIR 5 VOLTAS</br>
+      <ru>ПРОЙДИТЕ 5 ПЕТЕЛЬ</ru>
+    </string>
+    <string id="COMPLETED">
+      <en>COMPLETED</en>
+      <de>ABGESCHLOSSEN</de>
+      <es>COMPLETADO</es>
+      <fr>TERMINÉ</fr>
+      <it>COMPLETATO</it>
+      <br>CONCLUÍDO</br>
+      <ru>ЗАВЕРШЕНО</ru>
+    </string>
+    <string id="FAILED">
+      <en>FAILED</en>
+      <de>NIEDERLAGE</de>
+      <es>FALLIDO</es>
+      <fr>ÉCHOUÉ</fr>
+      <it>FALLITI</it>
+      <br>FRACASSOU</br>
+      <ru>НЕ УДАЛОСЬ</ru>
+    </string>
+    <string id="TUTORIAL_2_1">
+      <en>A SHIELD ON THE ENEMY ORBIT. CATCH IT TO PROTECT YOURSELF</en>
+      <de>EIN SCHILD IM GEGNERISCHEN ORBIT. FANG IHN, UM DICH ZU SCHÜTZEN.</de>
+      <es>UN ESCUDO CONTRA LA ÓRBITA ENEMIGA. CÓGELO PARA PROTEGERTE.</es>
+      <fr>UN BOUCLIER SUR L'ORBITE ENNEMIE. ATTRAPEZ-LE POUR VOUS PROTÉGER.</fr>
+      <it>UNO SCUDO NELL'ORBITA NEMICA. PRENDILO PER PROTEGGERTI</it>
+      <br>UM ESCUDO NA ÓRBITA INIMIGA. PEGUE-O PARA SE PROTEGER.</br>
+      <ru>ЩИТ ПРОТИВ ВРАЖЕСКОЙ СФЕРЫ. ЛОВИ, ЧТОБЫ ЗАЩИТИТЬ СЕБЯ</ru>
+    </string>
+    <string id="TUTORIAL_3_1">
+      <en>A SHOT ON THE ENEMY ORBIT. CATCH IT AND USE IT AGAINST YOUR ENEMIES</en>
+      <de>EIN SCHUSS IM GEGNERISCHEN ORBIT. FANG IHN UND SETZE IHN GEGEN DEINE GEGNER EIN.</de>
+      <es>UN DISPARO CONTRA LA ÓRBITA ENEMIGA. CÓGELO Y ÚSALO CONTRA LOS ENEMIGOS.</es>
+      <fr>UN TIR SUR L'ORBITE ENNEMIE. ATTRAPEZ-LE POUR L'UTILISER CONTRE VOS ENNEMIS.</fr>
+      <it>UN COLPO NELL'ORBITA NEMICA. PRENDILO E USALO CONTRO I TUOI NEMICI</it>
+      <br>UM TIRO NA ÓRBITA INIMIGA. PEGUE E USE-O CONTRA SEUS INIMIGOS.</br>
+      <ru>ВЫСТРЕЛИ ПО ВРАЖЕСКОЙ СФЕРЕ. ЛОВИ ЕЕ И ИСПОЛЬЗУЙ ПРОТИВ СВОИХ ВРАГОВ</ru>
+    </string>
+    <string id="EXIT_PROMPT">
+      <en>EXIT?</en>
+      <de>BEENDEN?</de>
+      <es>¿SALIR?</es>
+      <fr>QUITTER ?</fr>
+      <it>USCIRE?</it>
+      <br>SAIR?</br>
+      <ru>ВЫЙТИ?</ru>
+    </string>
+    <string id="CONTINUE">
+      <en>CONTINUE</en>
+      <de>FORTFAHREN</de>
+      <es>CONTINUAR</es>
+      <fr>CONTINUER</fr>
+      <it>CONTINUA</it>
+      <br>CONTINUAR</br>
+      <ru>ПРОДОЛЖИТЬ</ru>
+    </string>
+    <string id="INSTRUCTIONS">
+      <en>ACCELERATE OR BRAKE AN ORBITING SPACESHIP TO AVOID CRASHING INTO ENEMY SHIPS.
+
+CONTROLS:
+TAP AND HOLD ARROW UP OR ARROW DOWN TO ACCELERATE OR BRAKE YOUR SPACESHIP.</en>
+      <de>BESCHLEUNIGE ODER BREMSE EIN RAUMSCHIFF IM ORBIT, UM ZUSAMMENSTÖSSE MIT GEGNERISCHEN SCHIFFEN ZU VERMEIDEN.
+
+STEUERUNG:
+TIPPE UND HALTE PFEIL HOCH ODER RUNTER, UM DEIN RAUMSCHIFF ZU BESCHLEUNIGEN ODER ABZUBREMSEN.</de>
+      <es>PILOTA UNA NAVE ESPACIAL Y ACELERA O FRENA PARA EVITAR CHOCARTE CONTRA LAS NAVES ENEMIGAS.
+
+CONTROLES:
+TOCA Y MANTÉN PULSADA LA FLECHA HACIA ARRIBA O ABAJO PARA ACELERAR O FRENAR.</es>
+      <fr>FAITES ACCÉLÉRER OU FREINER VOTRE VAISSEAU SPATIAL EN ORBITE POUR ÉVITER DE PERCUTER LES VAISSEAUX ENNEMIS.
+
+COMMANDES :
+TOUCHEZ ET MAINTENEZ LA FLÈCHE DU HAUT OU LA FLÈCHE DU BAS POUR FAIRE ACCÉLÉRER OU FREINER VOTRE VAISSEAU SPATIAL.</fr>
+      <it>ACCELERA O FRENA UN'ASTRONAVE IN ORBITA PER EVITARE DI SCHIANTARTI CONTRO LE NAVICELLE NEMICHE.
+
+COMANDI:
+TOCCA E TIENI PREMUTA LA FRECCIA SU O LA FRECCIA GIÙ PER ACCELERARE O FRENARE L'ASTRONAVE.</it>
+      <br>ACELERE OU FREIE NA ESPAÇONAVE EM ÓRBITA PARA EVITAR COLIDIR COM AS NAVES INIMIGAS.
+
+CONTROLES:
+TOQUE E SEGURE A SETA PARA CIMA OU PARA BAIXO PARA ACELERAR OU FREAR SUA ESPAÇONAVE.</br>
+      <ru>УСКОРЯЙТЕ ИЛИ ТОРМОЗИТЕ КОСМИЧЕСКИЙ КОРАБЛЬ, ЧТОБЫ ИЗБЕЖАТЬ СТОЛКНОВЕНИЯ С ВРАЖЕСКИМИ КОРАБЛЯМИ.
+
+УПРАВЛЕНИЕ:
+НАЖМИТЕ И УДЕРЖИВАЙТЕ СТРЕЛКУ ВВЕРХ ИЛИ СТРЕЛКА ВНИЗ, ЧТОБЫ УСКОРИТЬ ИЛИ ЗАТОРМОЗИТЬ ВАШ КОСМИЧЕСКИЙ КОРАБЛЬ.</ru>
+    </string>
+    <string id="RESUME">
+      <en>RESUME</en>
+      <de>WEITER</de>
+      <es>CONTINUAR</es>
+      <fr>REPRENDRE</fr>
+      <it>RIPRENDI</it>
+      <br>RETOMAR</br>
+      <ru>ПРОДОЛЖИТЬ</ru>
+    </string>
+    <string id="MENU">
+      <en>MENU</en>
+      <de>MENÜ</de>
+      <es>MENÚ</es>
+      <fr>MENU</fr>
+      <it>MENU</it>
+      <br>MENU</br>
+      <ru>МЕНЮ</ru>
+    </string>
+    <string id="BEST_SCORE">
+      <en>BEST SCORE</en>
+      <de>BESTES ERGEBNIS</de>
+      <es>MEJOR PUNTUACIÓN</es>
+      <fr>MEILLEUR SCORE</fr>
+      <it>MIGLIOR PUNTEGGIO</it>
+      <br>MELHOR PONTUAÇÃO</br>
+      <ru>ЛУЧШИЙ РЕЗУЛЬТАТ</ru>
+    </string>
+    <string id="REVIVE">
+      <en>REVIVE</en>
+      <de>WIEDERBELEBEN</de>
+      <es>RESUCITAR</es>
+      <fr>RESSUSCITER</fr>
+      <it>RIANIMA</it>
+      <br>REVIVER</br>
+      <ru>ОЖИВИТЬ</ru>
+    </string>
+    <string id="NEW_RECORD">
+      <en>NEW RECORD</en>
+      <de>NEUER REKORD!</de>
+      <es>¡RÉCORD NUEVO!</es>
+      <fr>NOUVEAU RECORD</fr>
+      <it>NUOVO RECORD!</it>
+      <br>NOVO RECORDE!</br>
+      <ru>НОВЫЙ РЕКОРД</ru>
+    </string>
+    <string id="YOUR_SCORE">
+      <en>YOUR SCORE</en>
+      <de>DEIN PUNKTESTAND</de>
+      <es>TU PUNTUACIÓN</es>
+      <fr>VOTRE SCORE</fr>
+      <it>IL TUO PUNTEGGIO</it>
+      <br>SUA PONTUAÇÃO</br>
+      <ru>ВАШ СЧЕТ</ru>
+    </string>
+    <string id="YOUR_RANK">
+      <en>YOUR RANK:</en>
+      <de>DEIN RANG:</de>
+      <es>TU RANGO:</es>
+      <fr>VOTRE RANG :</fr>
+      <it>IL TUO GRADO:</it>
+      <br>SUA CLASSIFICAÇÃO:</br>
+      <ru>ВАШ РАНГ:</ru>
+    </string>
+    <string id="GRAND_MASTER">
+      <en>GRAND MASTER</en>
+      <de>GROSSMEISTER</de>
+      <es>GRAN MAESTRO</es>
+      <fr>GRAND MAÎTRE</fr>
+      <it>GRAN MAESTRO</it>
+      <br>GRANDE MESTRE</br>
+      <ru>ГРАНД МАСТЕР</ru>
+    </string>
+    <string id="LORD">
+      <en>LORD</en>
+      <de>LORD</de>
+      <es>SEÑOR</es>
+      <fr>SEIGNEUR</fr>
+      <it>LORD</it>
+      <br>SENHOR</br>
+      <ru>ЛОРД</ru>
+    </string>
+    <string id="KNIGHT">
+      <en>KNIGHT</en>
+      <de>RITTER</de>
+      <es>CABALLERO</es>
+      <fr>CHEVALIER</fr>
+      <it>CAVALIERE</it>
+      <br>CAVALEIRO</br>
+      <ru>РЫЦАРЬ</ru>
+    </string>
+    <string id="HUNTER">
+      <en>HUNTER</en>
+      <de>JÄGER</de>
+      <es>CAZADOR</es>
+      <fr>CHASSEUR</fr>
+      <it>CACCIATORE</it>
+      <br>CAÇADOR</br>
+      <ru>ОХОТНИК</ru>
+    </string>
+    <string id="TROOPER">
+      <en>TROOPER</en>
+      <de>KAVALLERIST</de>
+      <es>SOLDADO</es>
+      <fr>SOLDAT</fr>
+      <it>SOLDATO</it>
+      <br>SOLDADO</br>
+      <ru>РЯДОВОЙ</ru>
+    </string>
+    <string id="ROOKIE">
+      <en>ROOKIE</en>
+      <de>NEULING</de>
+      <es>NOVATO</es>
+      <fr>NOVICE</fr>
+      <it>RECLUTA</it>
+      <br>INICIANTE</br>
+      <ru>НОВОБРАНЕЦ</ru>
+    </string>
+    <string id="SHOTS">
+      <en>SHOTS</en>
+      <de>SCHÜSSE</de>
+      <es>DISPAROS</es>
+      <fr>TIRS</fr>
+      <it>COLPI</it>
+      <br>TIROS</br>
+      <ru>ВЫСТРЕЛОВ</ru>
+    </string>
+    <string id="COLLECT">
+      <en>COLLECT</en>
+      <de>SAMMELN</de>
+      <es>RECOGER</es>
+      <fr>RÉCUPÉRER</fr>
+      <it>RACCOGLI</it>
+      <br>COLECIONAR</br>
+      <ru>СОБРАТЬ</ru>
+    </string>
+        <string id="DAILY_REWARD">
+      <en>DAILY REWARD</en>
+      <de>TAGESBELOHNUNG</de>
+      <es>RECOMPENSA DIARIA</es>
+      <fr>RÉCOMPENSE QUOTIDIENNE</fr>
+      <it>RICOMPENSA GIORNALIERA</it>
+      <br>RECOMPENSA DIÁRIA</br>
+      <ru>ЕЖЕДНЕВНАЯ НАГРАДА</ru>
+    </string>
+  </strings>
+</stringresources>
