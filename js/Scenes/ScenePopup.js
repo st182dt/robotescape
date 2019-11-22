@@ -89,6 +89,9 @@ ScenePopup.prototype = {
                 case 7:
                     txtInfo.text = "You did it!";
                     break;
+                case 8:
+                    txtInfo.text = "Blue robots always move\nopposite of you.";
+                    break;
             }
         }
 

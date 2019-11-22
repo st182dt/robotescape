@@ -20,6 +20,7 @@ SceneHra.prototype = {
         isMouseDown = false;
         canSwipe = true;
         startPos = {x:0,y:0};
+        last_direction = 0;
         coin_to_destroy = false;
         
         money = 0;
@@ -34,12 +35,25 @@ SceneHra.prototype = {
 		field.scale.set(btnScale);
         field.alpha = 1;
         
-        head = grpSceneHra.create(0, -game.height/2+ 40, 'header');
+        head = grpSceneHra.create(0, 0, 'header');
         head.anchor.set(0.5);
-        head.scale.set(1);
-        txtLevel = grpSceneHra.add(createText(0, -game.height/2+38 , "Level: "+level, 45,'popup_font'));
+        head.reset();
+        
+        txtLevel = grpSceneHra.add(createText(0, 0, "Level: "+level, 45,'popup_font'));
 		txtLevel.anchor.set(0.5);
         txtLevel.alpha = 1;
+        
+        if (GAME_CURRENT_ORIENTATION === ORIENTATION_PORTRAIT){
+            head.x = 0; head.y = -game.height/2 + 40;
+            txtLevel.x = 0; txtLevel.y = -game.height/2+38;
+            head.scale.set(1);
+            txtLevel.scale.set(1);
+        }else{
+            head.x = game.width / 4; head.y = -game.height/2 + 35;
+            txtLevel.x = game.width / 4; txtLevel.y = -game.height/2+30;
+            head.scale.set(0.7);
+            txtLevel.scale.set(0.7);
+        }
         
         collision = false;
         
@@ -53,7 +67,7 @@ SceneHra.prototype = {
             coin.alpha = 0;
         }
         
-        robots = [{x:1,y:0,id:grpSceneHra.create(0,0, 'robot_green')}];
+        robots = [{x:1,y:0,type:0,id:grpSceneHra.create(0,0, 'robot_green')}];
         for(let i = 0; i < robots.length; i++){
             let robot = robots[i].id;
             robot.x = -180 + 180 * robots[i].x;
@@ -110,7 +124,7 @@ SceneHra.prototype = {
                 setTimeout(function(){
                     if(n == 1){x=1;y=1;}
                     else if(n == 2){x=1;y=2;}
-                    else if(n == 3){x=0;y=2;}
+                    else if(n == 3){x=1;y=2;}
                     else if(n == 4){x=2;y=2;}
                     char.x = -180 + 180 * x; char.y = -180 + 180 * y;
                     game.add.tween(char).to({alpha:1}, 100, Phaser.Easing.Linear.Out, true);
@@ -119,24 +133,24 @@ SceneHra.prototype = {
                     .onComplete.add(function(){
                         switch(n){
                             case 1:
-                                robots = [{x:1,y:0,id:grpSceneHra.create(0,0, 'robot_green')}];
+                                robots = [{x:1,y:0,type:0,id:grpSceneHra.create(0,0, 'robot_green')}];
                                 coins = [{x:1,y:0,id:grpSceneHra.create(0,0, 'coin')}];
                                 tutorial = 1;
                                 break;
                             case 2:
-                                robots = [{x:0,y:0,id:grpSceneHra.create(0,0, 'robot_green')},
-                                         {x:2,y:0,id:grpSceneHra.create(0,0, 'robot_green')}];
+                                robots = [{x:0,y:0,type:0,id:grpSceneHra.create(0,0, 'robot_green')},
+                                         {x:2,y:0,type:0,id:grpSceneHra.create(0,0, 'robot_green')}];
                                 
                                 coins = [{x:1,y:1,id:grpSceneHra.create(0,0, 'coin')},
                                         {x:2,y:2,id:grpSceneHra.create(0,0, 'coin')}];
                                 break;
                             case 3:
-                                robots = [{x:2,y:0,id:grpSceneHra.create(0,0, 'robot_green')}];
+                                robots = [{x:0,y:0,type:1,id:grpSceneHra.create(0,0, 'robot_blue')}];
                                 
-                                coins = [{x:1,y:0,id:grpSceneHra.create(0,0, 'coin')}];
+                                coins = [{x:1,y:1,id:grpSceneHra.create(0,0, 'coin')}];
                                 break;
                             case 4:
-                                robots = [{x:1,y:0,id:grpSceneHra.create(0,0, 'robot_green')}];
+                                robots = [{x:1,y:0,type:0,id:grpSceneHra.create(0,0, 'robot_green')}];
                                 
                                 coins = [{x:2,y:1,id:grpSceneHra.create(0,0, 'coin')},
                                         {x:1,y:2,id:grpSceneHra.create(0,0, 'coin')}];
@@ -182,13 +196,28 @@ SceneHra.prototype = {
             if(!collision){
             for(let i = 0; i < robots.length; i++){
                 let robot = robots[i].id;
-                robots[i].y += 1;
+                if(robots[i].type == 0){
+                    robots[i].y += 1;
+                }else{
+                    switch(last_direction){
+                        case 0: robots[i].x += 1; break;
+                        case 1: robots[i].x -= 1; break;
+                        case 2: robots[i].y += 1; break;
+                        case 3: robots[i].y -= 1; break;
+                    }
+                }
+                
                 if(robots[i].y == 3){
                     game.add.tween(robot).to({alpha:0}, 250, Phaser.Easing.Linear.Out, true);
                     game.add.tween(robot).to({y:180+45}, 500, Phaser.Easing.Linear.Out, true);
+                }
+                else if(robots[i].x == -1){
+                    game.add.tween(robot).to({alpha:0}, 250, Phaser.Easing.Linear.Out, true);
+                    game.add.tween(robot).to({x:-180-45}, 500, Phaser.Easing.Linear.Out, true);
                     //zmaz robota z arrayu
-                }else
-                game.add.tween(robot).to({y:-180 + 180 * robots[i].y}, 500, Phaser.Easing.Quadratic.Out, true);
+                }
+                else
+                game.add.tween(robot).to({x:-180 + 180 * robots[i].x,y:-180 + 180 * robots[i].y}, 500, Phaser.Easing.Quadratic.Out, true);
             }
             }
             if(tutorial == 3) { tutorial++; setTimeout(function(){ scenes[2].ShowAnimated(3); },700); }
@@ -198,7 +227,7 @@ SceneHra.prototype = {
                 game.add.tween(robot).to({alpha:1}, 100, Phaser.Easing.Linear.Out, true);
                 game.add.tween(robot.scale).to({x:0.75 * 1.1,y:0.75 *1.1}, 100, Phaser.Easing.Linear.Out, true)
                 .onComplete.add(function(){ game.add.tween(robot.scale).to({x:0.75,y:0.75}, 100, Phaser.Easing.Linear.Out, true)
-                .onComplete.add(function(){ collision = false; },this); },this);
+                .onComplete.add(function(){ if(level == 3) scenes[2].ShowAnimated(8); collision = false; },this); },this);
             }
             for(let i = 0; i < coins.length; i++){
                 let coin = coins[i].id;
@@ -218,7 +247,9 @@ SceneHra.prototype = {
                     setTimeout(function(){ scenes[2].ShowAnimated(4); },250);
                     break;
                 }
-                if(robots[i].y < 3) level_is_finished = false;
+                if(robots[i].type == 0 && robots[i].y < 3) level_is_finished = false;
+                else if(robots[i].type == 1 && robots[i].x >= 0 && robots[i].x <= 2 && robots[i].y >= 0 && robots[i].y <= 2)
+                    level_is_finished = false;
             }
             if(level_is_finished && !collision){
                 collision = true;
@@ -276,7 +307,7 @@ SceneHra.prototype = {
                         if(tutorial == 1) tutorial += 2;
                         else if(tutorial == 2) tutorial++;
                         if(tutorial != 4 && tutorial != 6 && x != 0){
-                        x -= 1;
+                        x -= 1; last_direction = 0;
                         game.add.tween(char).to({x:-180 + 180 * x}, 250, Phaser.Easing.Quadratic.Out, true)
                         .onComplete.add(function(){SceneHra.instance.animateRobots(2)},this);
                         }
@@ -285,7 +316,7 @@ SceneHra.prototype = {
                         if(tutorial == 1) tutorial += 2;
                         else if(tutorial == 2) tutorial++;
                         if(tutorial != 4 && tutorial != 6 && x != 2){
-                        x += 1;
+                        x += 1; last_direction = 1;
                         game.add.tween(char).to({x:-180 + 180 * x}, 250, Phaser.Easing.Quadratic.Out, true)
                         .onComplete.add(function(){SceneHra.instance.animateRobots(2)},this);
                         }
@@ -297,7 +328,7 @@ SceneHra.prototype = {
                         else if(tutorial == 2){
                             scenes[2].ShowAnimated(2);
                         }else if(tutorial != 4 && tutorial != 6 && y != 0){
-                        y -= 1;
+                        y -= 1; last_direction = 2;
                         game.add.tween(char).to({y:-180 + 180 * y}, 250, Phaser.Easing.Quadratic.Out, true)
                         .onComplete.add(function(){SceneHra.instance.animateRobots(2)},this);
                         }
@@ -309,7 +340,7 @@ SceneHra.prototype = {
                         else if(tutorial == 2 && tutorial != 6){
                             scenes[2].ShowAnimated(2);
                         }else if(tutorial != 4 && y != 2){
-                            y += 1;
+                            y += 1; last_direction = 3;
                             game.add.tween(char).to({y:-180 + 180 * y}, 250, Phaser.Easing.Quadratic.Out, true)
                             .onComplete.add(function(){SceneHra.instance.animateRobots(2);},this);
                         }
@@ -326,8 +357,19 @@ SceneHra.prototype = {
 	onResolutionChange: function ()
 	{
 		grpSceneHra.position.set(game.width >> 1, game.height >> 1);
-        head.y = -game.height/2 + 40;
-        txtLevel.y = -game.height/2+38;
+        
+        if (GAME_CURRENT_ORIENTATION === ORIENTATION_PORTRAIT){
+            head.x = 0; head.y = -game.height/2 + 40;
+            txtLevel.x = 0; txtLevel.y = -game.height/2+38;
+            head.scale.set(1);
+            txtLevel.scale.set(1);
+        }else{
+            head.x = game.width / 4; head.y = -game.height/2 + 35;
+            txtLevel.x = game.width / 4; txtLevel.y = -game.height/2+30;
+            head.scale.set(0.7);
+            txtLevel.scale.set(0.7);
+        }
+        
         /*field.y = field.getBounds().topLeft.y + game.width/2 ;
         field.x = field.getBounds().topLeft.x;*/
         //field.x = 
