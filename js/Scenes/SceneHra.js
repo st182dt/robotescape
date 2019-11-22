@@ -37,7 +37,6 @@ SceneHra.prototype = {
         
         head = grpSceneHra.create(0, 0, 'header');
         head.anchor.set(0.5);
-        head.reset();
         
         txtLevel = grpSceneHra.add(createText(0, 0, "Level: "+level, 45,'popup_font'));
 		txtLevel.anchor.set(0.5);
@@ -54,6 +53,8 @@ SceneHra.prototype = {
             head.scale.set(0.7);
             txtLevel.scale.set(0.7);
         }
+        txtLevel.reset();
+        head.reset();
         
         collision = false;
         
