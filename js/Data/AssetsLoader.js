@@ -25,6 +25,7 @@ function loadImages(game)
     game.load.image('shadow', 'assets/' + IMAGE_FOLDER + 'shadow.png');
     game.load.image('game_field', 'assets/' + IMAGE_FOLDER + 'game_field.png');
     game.load.image('robot_green', 'assets/' + IMAGE_FOLDER + 'robot_green.png');
+    game.load.image('robot_blue', 'assets/' + IMAGE_FOLDER + 'robot_blue.png');
     game.load.image('player', 'assets/' + IMAGE_FOLDER + 'player.png');
     game.load.image('tutorial', 'assets/' + IMAGE_FOLDER + 'tutorial.png');
     game.load.image('qmark', 'assets/' + IMAGE_FOLDER + 'question_mark.png');
